@@ -1,0 +1,63 @@
+package com.company;
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int place[][] = new int[3][3];
+        place[0][0] = 1;
+        place[0][1] = 2;
+        place[0][2] = 3;
+        place[1][0] = 4;
+        place[1][1] = 5;
+        place[1][2] = 6;
+        place[2][0] = 7;
+        place[2][1] = 8;
+        place[2][2] = 9;
+            int allSymbol = 0;
+            System.out.println("the game has started, select the cell");
+            Scanner scanner = new Scanner(System.in);
+            int combination = scanner.nextInt();
+            Random rnd = new Random();
+            int number = rnd.nextInt(9) + 1;
+        System.out.println(number);
+        boolean isCombo = false;
+        boolean isNumber = false;
+        
+        while(isCombo != true  || isNumber !=true ||  allSymbol == -9) {
+                if (combination == number || combination == combination || number== combination || number == number )
+                if (combination == 1 || && combination == 2 && combination == 3 ||
+                    combination == 4 && combination == 5 && combination == 6 ||
+                    combination == 7 && combination == 8 && combination == 9 ||
+                    combination == 1 && combination == 4 && combination == 7 ||
+                    combination == 2 && combination == 5 && combination == 8 ||
+                    combination == 3 && combination == 6 && combination == 9 ||
+                    combination == 1 && combination == 5 && combination == 9 ||
+                    combination == 3 && combination == 5 && combination == 7) {
+                    int combination1 = combination;
+                    allSymbol --;
+                    isCombo = true;
+                }
+                    if (number== 1 &&  number== 2 &&  number== 3 ||
+                        number== 4 &&  number== 5 &&  number== 6 ||
+                        number== 7 &&  number== 8 &&  number== 9 ||
+                        number== 1 &&  number== 4 &&  number== 7 ||
+                        number== 2 &&  number== 5 &&  number== 8 ||
+                        number== 3 &&  number== 6 &&  number== 9 ||
+                        number== 1 &&  number== 5 &&  number== 9 ||
+                        number== 3 &&  number== 5 &&  number== 7) {
+                        allSymbol --;
+                    isNumber = true;
+                }
+                    if(isNumber == true){
+                        System.out.println("machine win");
+                    }else if(isCombo == true){
+                        System.out.println("You wiiiiiiiiiin");
+                    }else if(allSymbol == -9){
+                        System.out.println("try win the next time");
+                    }
+
+            }
+    }
+}
