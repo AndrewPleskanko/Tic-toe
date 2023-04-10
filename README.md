@@ -1,6 +1,6 @@
 # Hello  :hand:
 ## This is my example of game
-![]("newGame.png" =250x250)
+![](src = "newGame.png" =250x250)
 
 
 ### *I created game board using array char and it looks cool*
