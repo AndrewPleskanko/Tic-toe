@@ -1,6 +1,6 @@
 # Hello  :hand:
 ## This is my example of game
-![opaF5](https://github.com/AndrewPleskanko/Tic-toe/blob/master/newGame.png = 250x250)
+![opaF5](https://github.com/AndrewPleskanko/Tic-toe/blob/master/newGame.png)
 
 
 ### *I created game board using array char and it looks cool*
