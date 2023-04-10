@@ -1,6 +1,6 @@
 # Hello  :hand:
 ## This is my example of game
-![]([src = "newGame.png"](https://github.com/AndrewPleskanko/Tic-toe/blob/master/newGame.png) =250x250)
+![](https://github.com/AndrewPleskanko/Tic-toe/blob/master/newGame.png =250x250)
 
 
 ### *I created game board using array char and it looks cool*
